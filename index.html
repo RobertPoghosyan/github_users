@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFL</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+<body>
+
+    <div class="container">
+        <div class="container_navbar">
+            <nav class="container_navbar_nav">
+                <ul class="container_navbar_nav_ul">
+                    <li class="container_navbar_nav_ul_users"> 
+                        <a class = "container_navbar_nav_ul_users_link"  href = "#" onclick="onNavClick('/'); return false;"> Users </a>
+                    </li>
+                    <li class="container_navbar_nav_ul_repos"> 
+                        <a class = "container_navbar_nav_ul_repos_link" href = "#" onclick="onNavClick('/repos'); return false;"> Repos </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="section_search">
+        <div class="section_search_input">
+            <input 
+                type="search" 
+                placeholder="Search for users" 
+                id="searchUser"
+                class="search_user" 
+                name="userSearch"
+                value=""
+            />
+        </div>
+    </div>
+   
+    <div id="root"></div>
+    <script src="./app.js"></script> 
+    
+</body>
+</html>
